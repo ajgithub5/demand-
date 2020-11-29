@@ -1,0 +1,71 @@
+[
+ {
+  "TABLE"  :"dbo.PG_TEST_CSI_FORECASTING_TRAIN_FRAMEWORK",
+  "COLUMNS": [     
+               "AE",	
+               "APE",	
+               "BUSWEEKNUM",	
+               "CROSS_VALIDATED_MAPE",	
+               "CROSS_VALIDATED_PWT",	
+               "CROSS_VALIDATED_RMSE",	
+               "ITERATION",	
+               "TEAM",	
+               "WEEKDAY_PROP",	
+               "YEAR",	
+               "AVG",	
+               "AVG_GAR",
+               "COUNT",	
+               "COUNT_OACTUALS", 
+               "GAR_FACTOR", 
+               "LOGIC",	
+               "M_MINUS_2",	
+               "M_MINUS_1", 	
+               "M_PLUS_1", 	
+               "M_PLUS_2",	
+               "MODEL",	
+               "OPTIMAL_HYPERPARAMETERS",	
+               "PRED", 
+               "CODE_RUN_START_UTC",	
+               "CODE_RUN_END_UTC",	
+               "LOCATION",	
+               "INFLATION", 
+               "HOLIDAY_INDICATOR"
+             ]
+ },
+ 
+ {
+  "TABLE"  :"dbo.PG_TEST_CSI_FORECASTING_TRAIN_SUMMARY",
+  "COLUMNS": [
+                 "CROSS_VALIDATED_MAPE",
+                 "CROSS_VALIDATED_PWT",
+                 "CROSS_VALIDATED_RMSE",
+                 "LOGIC",
+                 "TEAM",
+                 "MODEL",
+                 "OPTIMAL_HYPERPARAMETERS",
+                 "BEST_MODEL",
+                 "CODE_RUN_START_UTC",
+                 "CODE_RUN_END_UTC"
+             ]   
+ },
+ 
+ {
+  "TABLE"  :"dbo.PG_TEST_CSI_FORECASTING_FORECAST_RESULTS",
+  "COLUMNS": [     	
+               "BUSWEEKNUM", 
+               "TEAM",	
+               "WEEKDAY_PROP",	
+               "YEAR",		
+               "COUNT_OACTUALS", 
+               "LOGIC",	
+               "MODEL",	
+               "OPTIMAL_HYPERPARAMETERS",	
+               "PRED", 
+               "CODE_RUN_START_UTC",	
+               "CODE_RUN_END_UTC",	
+               "LOCATION",	
+               "INFLATION", 
+               "HOLIDAY_INDICATOR"
+             ]
+ }
+ ]

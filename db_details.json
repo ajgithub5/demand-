@@ -1,0 +1,23 @@
+[
+{
+    "env":"test",
+    "db_string": "mssql+pyodbc://LGRDCPSQL30/INSIGHTS_DATABASE_2?driver=SQL Server?Trusted_Connection=yes",
+    "tables": {
+		"train_summary":"dbo.PG_TEST_CSI_FORECASTING_TRAIN_SUMMARY",
+                "train_framework":"dbo.PG_TEST_CSI_FORECASTING_TRAIN_FRAMEWORK",
+                "forecast_results":"dbo.PG_TEST_CSI_FORECASTING_FORECAST_RESULTS",
+		"logs":"dbo.PG_TEST_CSI_FORECASTING_CODE_RUN_LOGS"
+	      }
+},
+
+{
+    "env":"prod",
+    "db_string": "mssql+pyodbc://LGRDCPSQL30/INSIGHTS_DATABASE_2?driver=SQL Server?Trusted_Connection=yes",
+    "tables": {
+		"train_summary":"dbo.SR_CSI_FORECASTING_TRAIN_SUMMARY",
+                "train_framework":"dbo.SR_CSI_FORECASTING_TRAIN_FRAMEWORK",
+                "forecast_results":"dbo.SR_CSI_FORECASTING_FORECAST_RESULTS",
+		"logs":"dbo.SR_CSI_FORECASTING_CODE_RUN_LOGS"
+	      }
+}
+]
